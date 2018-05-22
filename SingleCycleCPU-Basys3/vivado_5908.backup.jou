@@ -1,0 +1,105 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Sun May 20 13:00:19 2018
+# Process ID: 5908
+# Current directory: C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13608 C:\Users\43787\Desktop\Vivado\SingleCycleCPU-Basys3\SingleCycleCPU.xpr
+# Log file: C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3/vivado.log
+# Journal file: C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3/SingleCycleCPU.xpr
+launch_simulation
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source testCPU.tcl
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+place_ports {an[3]} U2
+place_ports {an[3]} W4
+place_ports {an[2]} V4
+place_ports {an[1]} U4
+place_ports {an[0]} U2
+place_ports {DispCode[0]} U7
+place_ports {DispCode[1]} V5
+place_ports {DispCode[6]} W7
+place_ports {DispCode[5]} W6
+place_ports {DispCode[4]} U8
+place_ports {DispCode[3]} V8
+place_ports {DispCode[2]} U5
+place_ports {Selector[1]} R2
+place_ports {Selector[0]} T1
+place_ports CLK W5
+place_ports Key T17
+place_ports Reset V17
+set_property IOSTANDARD LVCMOS33 [get_ports [list {an[3]} {an[2]} {an[1]} {an[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {DispCode[6]} {DispCode[5]} {DispCode[4]} {DispCode[3]} {DispCode[2]} {DispCode[1]} {DispCode[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Selector[1]} {Selector[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list CLK]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Key]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list Reset]]
+file mkdir C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3/SingleCycleCPU.srcs/constrs_1/new
+close [ open C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3/SingleCycleCPU.srcs/constrs_1/new/singlecyclecpu.xdc w ]
+add_files -fileset constrs_1 C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3/SingleCycleCPU.srcs/constrs_1/new/singlecyclecpu.xdc
+set_property target_constrs_file C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3/SingleCycleCPU.srcs/constrs_1/new/singlecyclecpu.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3/SingleCycleCPU.runs/impl_1/BasysSingleCycleCPU.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3/SingleCycleCPU.runs/impl_1/BasysSingleCycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3/SingleCycleCPU.runs/impl_1/BasysSingleCycleCPU.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3/SingleCycleCPU.runs/impl_1/BasysSingleCycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+refresh_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+close_sim

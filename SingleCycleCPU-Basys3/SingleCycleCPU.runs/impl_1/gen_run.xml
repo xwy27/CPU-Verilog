@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1526909063">
+  <File Type="OPT-DCP" Name="BasysSingleCycleCPU_opt.dcp"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+  <File Type="ROUTE-DCP" Name="BasysSingleCycleCPU_routed.dcp"/>
+  <File Type="PA-TCL" Name="BasysSingleCycleCPU.tcl"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="BasysSingleCycleCPU_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="BasysSingleCycleCPU_timing_summary_init.rpt"/>
+  <File Type="OPT-TIMING" Name="BasysSingleCycleCPU_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="BasysSingleCycleCPU.hwdef"/>
+  <File Type="PWROPT-DCP" Name="BasysSingleCycleCPU_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="BasysSingleCycleCPU_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="BasysSingleCycleCPU_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="BasysSingleCycleCPU_placed.dcp"/>
+  <File Type="PLACE-IO" Name="BasysSingleCycleCPU_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="BasysSingleCycleCPU_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="BasysSingleCycleCPU_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="BasysSingleCycleCPU_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="BasysSingleCycleCPU_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="BasysSingleCycleCPU_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="BasysSingleCycleCPU_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="BasysSingleCycleCPU_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="BasysSingleCycleCPU_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="BasysSingleCycleCPU_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="BasysSingleCycleCPU_physopt.dcp"/>
+  <File Type="RDI-RDI" Name="BasysSingleCycleCPU.vdi"/>
+  <File Type="PHYSOPT-DRC" Name="BasysSingleCycleCPU_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="BasysSingleCycleCPU_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-DRC" Name="BasysSingleCycleCPU_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="BasysSingleCycleCPU_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="BasysSingleCycleCPU_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="BasysSingleCycleCPU_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="BasysSingleCycleCPU_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="BasysSingleCycleCPU_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="BasysSingleCycleCPU_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="BasysSingleCycleCPU_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="BasysSingleCycleCPU_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="BasysSingleCycleCPU_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="BasysSingleCycleCPU_clock_utilization_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="BasysSingleCycleCPU_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="BasysSingleCycleCPU_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="BasysSingleCycleCPU_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="BasysSingleCycleCPU_timing_summary_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="BasysSingleCycleCPU.bit"/>
+  <File Type="BG-BIN" Name="BasysSingleCycleCPU.bin"/>
+  <File Type="BITSTR-MSK" Name="BasysSingleCycleCPU.msk"/>
+  <File Type="BITSTR-RBT" Name="BasysSingleCycleCPU.rbt"/>
+  <File Type="BITSTR-NKY" Name="BasysSingleCycleCPU.nky"/>
+  <File Type="BITSTR-BMM" Name="BasysSingleCycleCPU_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="BasysSingleCycleCPU.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="BasysSingleCycleCPU.sysdef"/>
+  <File Type="BG-BGN" Name="BasysSingleCycleCPU.bgn"/>
+  <File Type="BG-DRC" Name="BasysSingleCycleCPU.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/SignZeroExtend.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Selector5.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Selector32.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RegisterFile.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PC.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/InstructionMemory.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DataMemory.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/head.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ControlUnit.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/CLOCK.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SingleCycleCPU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PressKey.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/display.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DispData.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/BasysSingleCycleCPU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="BasysSingleCycleCPU"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/singlecyclecpu.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/singlecyclecpu.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,75 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Mon May 21 19:09:50 2018
+# Process ID: 6648
+# Current directory: C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6964 C:\Users\43787\Desktop\Vivado\SingleCycleCPU-Basys3\SingleCycleCPU.xpr
+# Log file: C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3/vivado.log
+# Journal file: C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3/SingleCycleCPU.xpr
+launch_simulation
+source testCPU.tcl
+restart
+run 100 ns
+run 100 ns
+run 100 ns
+restart
+run 100 ns
+run 100 ns
+run 100 ns
+restart
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+run 100 ns
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+source testCPU.tcl
+run 100 ns
+run 100 ns
+run 100 ns
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3/SingleCycleCPU.runs/impl_1/BasysSingleCycleCPU.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/43787/Desktop/Vivado/SingleCycleCPU-Basys3/SingleCycleCPU.runs/impl_1/BasysSingleCycleCPU.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+refresh_hw_device [lindex [get_hw_devices] 0]
+close_sim
