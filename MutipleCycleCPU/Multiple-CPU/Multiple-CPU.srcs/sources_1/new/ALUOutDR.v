@@ -25,7 +25,7 @@ module ALUOutDR(dataIn, clk, dataOut);
   input [31:0] dataIn;
   output reg [31:0] dataOut;
 
-  always @(posedge clk) begin
+  always @(negedge clk) begin
     dataOut <= dataIn;
   end
 endmodule

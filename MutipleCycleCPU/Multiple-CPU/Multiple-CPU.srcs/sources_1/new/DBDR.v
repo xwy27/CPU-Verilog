@@ -21,10 +21,11 @@
 
 
 module DBDR(dataIn, clk, dataOut);
-  input clk;
   input [31:0] dataIn;
+  input clk;
   output reg [31:0] dataOut;
-  always @(posedge clk) begin
+
+  always @(negedge clk) begin
     dataOut <= dataIn;
   end
 endmodule

@@ -20,13 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module IR(dataIn, clk, dataOut, IRWre);
+module IR(clk, IRWre, dataIn, dataOut);
   input clk;
   input IRWre;
   input [31:0] dataIn;
   output reg [31:0] dataOut;
 
-  always @(posedge clk) begin
+  always @(negedge clk) begin
     if (IRWre) begin
       dataOut <= dataIn;
     end

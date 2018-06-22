@@ -26,7 +26,7 @@ module DFlipFlop(stateIn, reset, clk, stateOut);
     output reg [2:0] stateOut;
 
     always @(posedge clk) begin
-      if (reset)    stateOut = 3'b000;
+      if (!reset)    stateOut = 3'b000;
       else  stateOut = stateIn;
     end
 endmodule

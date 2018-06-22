@@ -22,7 +22,7 @@
 
 module selector_2to1(A, B, Sign, Out);
   input [31:0] A, B;
-  input [1:0] Sign;
+  input Sign;
   output reg [31:0] Out;
   always @(Sign or A or B) begin
     case (Sign)

@@ -40,8 +40,8 @@
 `define opHalt 6'b111111
 
 // 状态二进制码
-`define sIF = 3'b000;
-`define sID = 3'b001;
-`define sEXE = 3'b010;
-`define sWB = 3'b011;
-`define sMEM = 3'b100;
+`define sIF 3'b000
+`define sID 3'b001
+`define sEXE 3'b010
+`define sWB 3'b011
+`define sMEM 3'b100
