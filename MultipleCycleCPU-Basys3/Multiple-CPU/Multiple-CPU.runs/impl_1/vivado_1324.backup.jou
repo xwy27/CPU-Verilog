@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Sat Jun 23 16:49:55 2018
+# Process ID: 1324
+# Current directory: C:/Users/43787/Desktop/Vivado/MultipleCPU-Basys3/Multiple-CPU/Multiple-CPU.runs/impl_1
+# Command line: vivado.exe -log MultipleCPUBasys.vdi -applog -messageDb vivado.pb -mode batch -source MultipleCPUBasys.tcl -notrace
+# Log file: C:/Users/43787/Desktop/Vivado/MultipleCPU-Basys3/Multiple-CPU/Multiple-CPU.runs/impl_1/MultipleCPUBasys.vdi
+# Journal file: C:/Users/43787/Desktop/Vivado/MultipleCPU-Basys3/Multiple-CPU/Multiple-CPU.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source MultipleCPUBasys.tcl -notrace

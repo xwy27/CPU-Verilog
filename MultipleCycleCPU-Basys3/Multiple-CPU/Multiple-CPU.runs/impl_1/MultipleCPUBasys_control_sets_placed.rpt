@@ -1,0 +1,221 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
+| Date         : Sat Jun 23 17:44:10 2018
+| Host         : DESKTOP-0IE61CV running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file MultipleCPUBasys_control_sets_placed.rpt
+| Design       : MultipleCPUBasys
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |   168 |
+| Minimum Number of register sites lost to control set restrictions |    38 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             125 |           51 |
+| No           | No                    | Yes                    |              23 |            8 |
+| No           | Yes                   | No                     |               9 |            5 |
+| Yes          | No                    | No                     |            1606 |          969 |
+| Yes          | No                    | Yes                    |              39 |           12 |
+| Yes          | Yes                   | No                     |             448 |          206 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+----------------------------------------+-------------------------------------+------------------+----------------+
+|         Clock Signal         |              Enable Signal             |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++------------------------------+----------------------------------------+-------------------------------------+------------------+----------------+
+|  myclock/CLK                 |                                        |                                     |                1 |              1 |
+|  myclock/CLK                 |                                        | myCPU/regfile/Register_reg[27][0]_0 |                1 |              2 |
+|  Led_BUFG                    |                                        | myCPU/regfile/Register_reg[27][0]_0 |                2 |              3 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[88][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[102][7][0]   |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[104][7][0]   |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[101][7]_0[0] |                                     |                8 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[100][7]_0[0] |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[0][7][0]     |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[9][7][0]     |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[99][7]_0[0]  |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[98][7]_0[0]  |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[97][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[95][7]_2[0]  |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[94][7]_0[0]  |                                     |                3 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[93][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[92][7]_0[0]  |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[91][7]_0[0]  |                                     |                3 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[90][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[8][7]_0[0]   |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[89][7][0]    |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[69][7][0]    |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[87][7][0]    |                                     |                3 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[86][7][0]    |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[85][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[84][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[83][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[82][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[81][7][0]    |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[80][7]_0[0]  |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[7][7]_0[0]   |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[79][7]_0[0]  |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[78][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[77][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[76][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[75][7]_0[0]  |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[74][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[73][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[72][7][0]    |                                     |                2 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[71][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[70][7][0]    |                                     |                8 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[6][7][0]     |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/E[0]                    |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[68][7]_0[0]  |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[67][7][0]    |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[66][7]_1[0]  |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[65][7][0]    |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[64][7][0]    |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[63][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[62][7][0]    |                                     |                3 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[61][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[60][7]_0[0]  |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[5][7]_0[0]   |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[59][7][0]    |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[58][7][0]    |                                     |                8 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[57][7]_0[0]  |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[56][7][0]    |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[55][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[54][7][0]    |                                     |                2 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[53][7]_0[0]  |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[52][7][0]    |                                     |                8 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[51][7][0]    |                                     |                8 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[50][7]_0[0]  |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[4][7]_0[0]   |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[48][7]_0[0]  |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[47][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[46][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[49][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[45][7][0]    |                                     |                3 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[44][7][0]    |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[43][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[42][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[41][7]_1[0]  |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[40][7][0]    |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[3][7][0]     |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[39][7][0]    |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[38][7][0]    |                                     |                3 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[37][7][0]    |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[36][7]_4[0]  |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[35][7][0]    |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[34][7][0]    |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[33][7][0]    |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[32][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[31][7][0]    |                                     |                8 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[30][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[2][7][0]     |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[29][7][0]    |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[28][7][0]    |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[27][7]_0[0]  |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[26][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[25][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[24][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[23][7][0]    |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[22][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[21][7][0]    |                                     |                3 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[20][7][0]    |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[1][7][0]     |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[19][7][0]    |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[18][7][0]    |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[17][7]_0[0]  |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[16][7][0]    |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[15][7]_1[0]  |                                     |                3 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[14][7][0]    |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[13][7][0]    |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[12][7]_0[0]  |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[127][7]_0[0] |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[126][7][0]   |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[125][7][0]   |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[124][7][0]   |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[123][7][0]   |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[122][7]_0[0] |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[121][7][0]   |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[120][7][0]   |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[11][7]_1[0]  |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[119][7][0]   |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[118][7][0]   |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[117][7][0]   |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[116][7][0]   |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[115][7][0]   |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[114][7][0]   |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[113][7]_1[0] |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[112][7][0]   |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[111][7]_0[0] |                                     |                3 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[110][7][0]   |                                     |                5 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[10][7]_0[0]  |                                     |                7 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[109][7][0]   |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[108][7]_0[0] |                                     |                6 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[107][7][0]   |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[106][7]_0[0] |                                     |                4 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[105][7][0]   |                                     |                3 |              8 |
+| ~Led_BUFG                    | myCPU/aluoutdr/memory_reg[103][7][0]   |                                     |                7 |              8 |
+| ~Led_BUFG                    |                                        | myCPU/ir/dataOut_reg[6]_2           |                5 |              9 |
+|  myshift/out_reg[15]_i_2_n_0 |                                        |                                     |                4 |             16 |
+|  CLK_IBUF_BUFG               |                                        | myCPU/regfile/Register_reg[27][0]_0 |                5 |             18 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[7][31]           |                                     |               16 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[8][31]_0         | myCPU/ir/Register_reg[8][0]_0       |               11 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[9][0]_0          | myCPU/regfile/Register_reg[27][0]_0 |               17 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[10][31]_0        | myCPU/regfile/Register_reg[27][0]_0 |               16 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[11][31]_0        | myCPU/regfile/Register_reg[27][0]_0 |               14 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[12][0]_0         | myCPU/ir/Register_reg[12][0]        |               18 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[13][0]_0         | myCPU/regfile/Register_reg[27][0]_0 |               10 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[14][31]_1        | myCPU/regfile/Register_reg[27][0]_0 |               12 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[15][31]_1        | myCPU/regfile/Register_reg[27][0]_0 |               13 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[16][31]          |                                     |               17 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[17][31]          |                                     |               14 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[18][31]_0        |                                     |               22 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[19][31]_0        |                                     |               19 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[1][31]_1         | myCPU/ir/Register_reg[1][31]_0      |               14 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[20][31]_0        |                                     |               22 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[21][31]_0        |                                     |               15 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[22][31]_0        |                                     |               15 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[23][31]_0        |                                     |               16 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[24][31]          | myCPU/ir/Register_reg[24][0]        |               17 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[25][0]           |                                     |               22 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[26][31]_0        | myCPU/regfile/Register_reg[27][0]_0 |               16 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[27][31]_0        | myCPU/regfile/Register_reg[27][0]_0 |               16 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[28][31]_0        | myCPU/ir/Register_reg[28][0]_0      |               14 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[29][31]          |                                     |               15 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[2][0]            |                                     |               20 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[30][31]          |                                     |               11 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[31][31]          |                                     |               15 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[3][31]           |                                     |               19 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[4][0]            |                                     |               22 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[5][31]_0         | myCPU/ir/Register_reg[5][31]        |               18 |             32 |
+| ~Led_BUFG                    | myCPU/ir/Register_reg[6][31]           |                                     |               19 |             32 |
+| ~Led_BUFG                    | myCPU/cu/dataOut_reg[0]_0              |                                     |               20 |             38 |
+|  Led_BUFG                    | myCPU/cu/E[0]                          | myCPU/regfile/Register_reg[27][0]_0 |               12 |             39 |
+| ~Led_BUFG                    |                                        |                                     |               46 |            108 |
++------------------------------+----------------------------------------+-------------------------------------+------------------+----------------+
+
+

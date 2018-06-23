@@ -112,12 +112,12 @@ module ControlUnit(opCode, clk, rst, sign, zero, PCWre, ALUSrcA, ALUSrcB, DBData
 
       IRWre = (State == `sIF) ? 1 : 0;
 
-      if ((State == `sIF || State == `sID) && (opCode == `opJr)) PCSrc = 2'b10;
-      else if ((State == `sIF || State == `sID) && (opCode == `opJ || opCode == `opJal)) PCSrc = 2'b11;
+      if ((State == `sID) && (opCode == `opJr)) PCSrc = 2'b10;
+      else if ((State == `sID) && (opCode == `opJ || opCode == `opJal)) PCSrc = 2'b11;
       else if (State == `sEXE && ((opCode == `opBeq && zero) || (opCode == `opBltz && sign && !zero)))  PCSrc = 2'b01;
       else  PCSrc = 2'b00;
 
-      if (opCode == `opHalt)  PCWre = 0;
+      // if (opCode == `opHalt)  PCWre = 0;
 
       case(opCode)
         `opSub, `opBeq, `opBltz:

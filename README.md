@@ -5,6 +5,8 @@
 - [CPU-Verilog](#cpu-verilog)
   - [SingleCycleCPU](#singlecyclecpu)
   - [SingleCycleCPU-Basys3](#singlecyclecpu-basys3)
+  - [MultipleCycleCPU](#multiplecyclecpu)
+  - [MultipleCycleCPU-Basys3](#multiplecyclecpu-basys3)
   - [Verilog](#verilog)
     - [部分语法讲解](#部分语法讲解)
       - [注释(comment)](#注释comment)
@@ -28,6 +30,14 @@ SYSU-CPU
 ## SingleCycleCPU-Basys3
 
 - 仿真测试通过
+- 烧板测试通过
+
+## MultipleCycleCPU
+
+- 仿真测试通过
+
+## MultipleCycleCPU-Basys3
+
 - 烧板测试通过
 
 ## Verilog
