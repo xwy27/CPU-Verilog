@@ -25,6 +25,8 @@ SYSU-CPU
 
 ## SingleCycleCPU
 
+[Blog](https://xwy27.github.io/Computer-Organization/SingleCycleCPU/)
+
 - 仿真测试通过
 
 ## SingleCycleCPU-Basys3
