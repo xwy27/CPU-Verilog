@@ -25,7 +25,9 @@ SYSU-CPU
 
 ## SingleCycleCPU
 
-[Blog](https://xwy27.github.io/Computer-Organization/SingleCycleCPU/)
+- Guide
+  - [Blog](https://xwy27.github.io/Computer-Organization/SingleCycleCPU/)
+  - ./Documents/ECOP-16340261-2.pdf
 
 - 仿真测试通过
 
@@ -35,6 +37,9 @@ SYSU-CPU
 - 烧板测试通过
 
 ## MultipleCycleCPU
+
+- Guide
+  - ./Documents/ECOP-16340261-3.pdf
 
 - 仿真测试通过
 
